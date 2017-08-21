@@ -1,6 +1,6 @@
 {
   "name": "metrics-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The core module from metrics sdk",
   "license": "MIT",
   "repository": "metrics/metrics-core",
@@ -12,7 +12,10 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "index.js"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "scripts": {
     "build": "babel src -d dist",
     "patch": "npm version patch && npm publish",
