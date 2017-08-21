@@ -4,15 +4,15 @@ import Socket from 'socket.io-client'
 class Metrics {
   constructor(apikey) {
     this.socket = new Socket('https://metriks.herokuapp.com', {
-      query: { apikey },
+      query: { apikey }
     })
   }
-  writeRequest(duration, path, status) {
+  writeRequest({ duration, path, status }) {
     this.socket.emit('request', {
       host: os.hostname(),
       duration,
       path,
-      status,
+      status
     })
   }
 }
