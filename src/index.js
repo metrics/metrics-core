@@ -3,7 +3,7 @@ import Socket from 'socket.io-client'
 
 class Metrics {
   constructor(apikey) {
-    this.socket = new Socket('https://metriks.herokuapp.com', {
+    this.socket = new Socket('https://metrics.tobi.sh', {
       query: { apikey }
     })
   }
